@@ -1,0 +1,69 @@
+<html>
+<style>
+@media screen {
+  .thumbnail-gallery {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .thumbnail-gallery > div {
+    display: table-row;
+  }
+
+  .thumbnail-gallery .thumbnail {
+    display: table-cell;
+    border: 0px solid #333333;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  /** reset all thumbnail gallery elements to display as block and fill screen **/
+  .thumbnail-gallery,
+  .thumbnail-gallery > div,
+  .thumbnail-gallery .thumbnail {
+    display: block;
+    width: 100%;
+  }
+}
+p{
+  text-align: center;
+}
+</style>
+
+
+<body bgcolor="#E6E6FA">
+<a href="login_home/index.php"><h3>Home</h3></a>
+<h1>MESSES</h1>
+<div class="thumbnail-gallery">
+  <div>
+   <!--<div class="thumbnail">
+      <img src="1.jpg" />
+      <p>Some text</p>
+    </div>-->
+    <div class="thumbnail">
+      <p><img src="m1.jpg" /></p>
+      <p>Mess I</p>
+    </div>
+    <!--<div class="thumbnail">
+      <a href="#"><p><img src="2.jpg" /></p></a>
+      <p>Mega Tower II</p>
+    </div>-->
+  </div>
+  <div>
+    <!--<div class="thumbnail">
+      <img src="1.jpg" />
+      <p>Some text</p>
+    </div>-->
+    <div class="thumbnail">
+      <p><img src="m2.jpg" /></p>
+      <p>Mess II</p>
+    </div>
+    <!--<div class="thumbnail">
+      <a href="#"><p><img src="2.jpg" /></p></a>
+      <p>Mega Tower IV</p>
+    </div>-->
+  </div>
+</div>
+</body>
+</html>

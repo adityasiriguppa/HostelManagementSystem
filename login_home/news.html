@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<title>EVENTS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/w3-theme-black.css">
+<link rel="stylesheet" href="css/css.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<style>
+.mySlides {display: none;}
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.w3-navbar li a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+</style>
+<body bgcolor="#E6E6FA">
+  <ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
+    <li class="w3-opennav w3-right w3-hide-large">
+      <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </li>
+    <!--<li><a href="#" class="w3-theme-l1">Logo</a></li>-->
+    <li class="w3-hide-small"><a href="dbms.php" class="w3-hover-white" style="margin-left:500px">HOME</a></li>
+    <li class="w3-hide-small"><a href="login/index.html" class="w3-hover-white">LOGIN</a></li>
+    <li class="w3-hide-small"><a href="news.html" class="w3-hover-white">NEWS</a></li>
+    <li class="w3-hide-small"><a href="contact.html" class="w3-hover-white">CONTACT</a></li>
+    <!--<li class="w3-hide-medium w3-hide-small"><a href="#" class="w3-hover-white">ClIENTS</a></li>-->
+    <!--<li class="w3-hide-small"><a href="#" class="w3-hover-white">COMPLAINTS/FEEDBACK</a></li>-->
+  </ul>
+
+
+<div class="header" style="margin-top:100px">
+<h2 class="w3-center">Hostel Events</h2>
+</div>
+<div class="w3-content w3-section" style="margin-left:300px;margin-right:100px;margin-top:250px">
+  <img class="mySlides" src="images/1.jpg" style="width:720px;height:540px">
+  <img class="mySlides" src="images/2.jpg" style="width:720px;height:540px">
+  <img class="mySlides" src="images/3.jpg" style="width:720px;height:540px">
+  <img class="mySlides" src="images/30.jpg" style="width:720px;height:540px">
+    <img class="mySlides" src="images/33.jpg" style="width:720px;height:540px">
+      <img class="mySlides" src="images/7.jpg" style="width:720px;height:540px">
+        <img class="mySlides" src="images/4.jpg" style="width:720px;height:540px">
+        <img class="mySlides" src="images/5.jpg" style="width:720px;height:540px">
+        <img class="mySlides" src="images/6.jpg" style="width:720px;height:540px">
+  <img class="mySlides" src="images/8.jpg" style="width:720px;height:540px">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+<p>The hostel events that are performed in NITK are:</br>
+<ul>
+<li><b>CRESCENDO</b>, the intra-institute cultural festival organized by the NITK Hostellers. Its like a mini Incident which provides a nice platform to exhibit and showcased the innate social and cultural talents and gives many others a chance to try something new for the first time.</br>
+<li><b>PHOENIX</b>, the annual sports meet organized at institute level. This adventuring sporting event organized by the hostellers</br></li>
+<li><b>BHARATH DARSHAN</b>, the festival celebrating the cultural diversity of India has been conducted as regular features of the Annual Calendar of the Students Council. In this students exhibit the different cultural events of all the states of India thereby built an ultimate platform of social and cultural exchange.</br></li>
+<li>The National Institute of Technology Karnataka (NITK) was founded on the western shores of the Indian peninsula close to the city of Mangalore in the year 1960, and since then it has been galvanizing the countless curious minds that have passed through its gates. Since its inception its spreading the message of cultural heritage by means a vibrant cultural festival called as <b>Cultural Week</b> in the premises which attracted a huge response from the nearby districts of Dakshina Kannada. To its credit events like State Level Kannada Drama competition and many other cultural exchange programmes were also a part of it. It was the only institute at that time to invite talented students and to showcase their talents in and around the districts.</br></li>
+<li>Intra College Sports meet like freshers cup and inter department leaguges will be organized by Recreation Committee. </li>
+</ul>
+</body>
+</html>

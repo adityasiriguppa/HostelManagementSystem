@@ -1,0 +1,1 @@
+alert("You have been already allotted a room");

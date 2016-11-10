@@ -1,0 +1,69 @@
+<html>
+<style>
+@media screen {
+  .thumbnail-gallery {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .thumbnail-gallery > div {
+    display: table-row;
+  }
+
+  .thumbnail-gallery .thumbnail {
+  font: 20;
+    display: table-cell;
+    border: 0px solid #333333;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  /** reset all thumbnail gallery elements to display as block and fill screen **/
+  .thumbnail-gallery,
+  .thumbnail-gallery > div,
+  .thumbnail-gallery .thumbnail {
+    display: block;
+    width: 50%;
+  }
+}
+p{
+  text-align: center;
+}
+</style>
+
+
+<body bgcolor="#E6E6FA" font="20">
+<h1><font size="20">Sports events</font><h1>
+<div class="thumbnail-gallery">
+  <div>
+   <div class="thumbnail">
+      <img src="sports/1.jpg" />
+      <h2>Inter School Footbal Tournament</h2>
+    </div>
+    <div class="thumbnail">
+      <p><img src="sports/2.jpg" /></p>
+      <h2><p>Annual Sports Meet</p></h2>
+    </div>
+    <div class="thumbnail">
+      <p><img src="sports/3.jpg" /></p>
+      <h2><p>Annual Staff and Faculty Games</p></h2>
+    </div>
+  </div>
+  <div>
+    <div class="thumbnail">
+      <img src="sports/4.jpg" />
+      <h2>Inter University<h2>
+    </div>
+    <div class="thumbnail">
+      <p><img src="sports/5.jpg" /></p>
+      <h2><p>North Zone Chess Competition</p><h2>
+    </div>
+    <div class="thumbnail">
+      <p><img src="sports/6.jpg" /></p>
+      <h2><p>AIU North Zone Football Chamionship</p><h2>
+    </div>
+  </div>
+</div>
+</body>
+</html>
